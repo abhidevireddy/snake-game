@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="snake.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id = 'gameContainer'>
+        <h1 id = 'title'> Welcome to my Snake Game! </h1>
+        <div>
+            <button id = 'startButton'>Start</button>
+            <h2 id = 'description'>Click Start to begin playing</h2>
+        </div>
+        <div class="side-image-left">
+            <img src="images/cartoon-snake.jpg"/>
+        </div>
+        <div class="side-image-right">
+            <img src="images/cartoon-snake.jpg"/>
+        </div>
+
+        <canvas id = 'gameBoard' width = '400' height = '400'></canvas>
+        <div id = 'scoreText'>0</div>
+        <button id = 'resetButton'>Reset</button>
+        <h1 id = 'title'> Scroll down for the game's instructions </h1>
+        <p id="instructions">
+            Use the arrow keys to move the snake.<br>
+            Collect the red squares to grow your snake and increase your score.<br>
+            Avoid colliding with the walls or yourself to keep playing!
+        </p>
+    </div>    
+
+    <script src="snake.js"></script>
+</body>
+</html>
